@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <div class="form-space">
+        <form action="https://formspree.io/f/xgedzyvb" method="post" class="form-container"> 
+            <label>
+                Nombre: <input type="text" name="Nombre">
+            </label>
+
+            
+            <label>
+               Apellido: <input type="text" name="Apellido">
+            </label>
+           
+            
+            <label>Seleccionar curso:
+                <select name="Curso" id="">
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Node">Node</option>
+                </select>
+            </label> 
+
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label>
+                    <input type="radio" name="Sexo" value="M">Mujer
+                    <input type="radio" name="Sexo" value="H">Hombre
+                </label>
+            </fieldset> 
+            
+            <label>Email
+                <input type="email" name="Email" placeholder="Ingresa tu email" required>
+            </label>
+            
+            <label for="">Contraseña
+                <input type="password" name="password" required>
+            </label>
+
+            <input type="reset" name="reset"> 
+            <input type="submit" value="Submit"> 
+
+        </form>
+    </div>
+</body>
+</html>
